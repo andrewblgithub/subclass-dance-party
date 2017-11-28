@@ -35,10 +35,17 @@ describe('dancer', function() {
     });
   });
   describe('loopyDancer', function() {
-    it('should apply wumbo animations when lineup button is pressed', function() {
+    it('should apply wumbo animations to loopyDancer lineup button is pressed', function() {
       let loopyDancer = new makeloopyDancer(10, 20, timeBetweenSteps);
       wumbify(loopyDancer);
       expect(loopyDancer.$node.hasClass('wumbo')).to.be.true;
+    });
+  });
+  describe('jumpyDancer', function() {
+    it('should apply wumbo animations to jumpyDancer lineup button is pressed', function() {
+      let jumpyDancer = new makeJumpyDancer(10, 20, timeBetweenSteps);
+      wumbify(jumpyDancer);
+      expect(jumpyDancer.$node.hasClass('wumbo')).to.be.true;
     });
   });
 });
