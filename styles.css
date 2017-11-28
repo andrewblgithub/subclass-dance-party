@@ -4,6 +4,7 @@ body, html{
 body{
   margin: 0px;
   background-color:#444;
+  background-image: url("https://vignette.wikia.nocookie.net/spongebob/images/4/47/Bikini-bottom.jpg/revision/latest?cb=20171020225427");
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -21,7 +22,43 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
   position:absolute;
+}
+
+.krabby{
+  background-image: url("https://i.imgur.com/cllnUO4.png");
+  width: 150px;
+	height: 150px;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+}
+
+.patrick{
+  background-image: url("https://vignette.wikia.nocookie.net/spongebob/images/8/8c/Patrick_star_fish.png/revision/latest?cb=20101103231454");
+	width: 60px;
+	height: 80px;
+  background-repeat: no-repeat;
+  background-size: 60px 80px;
+}
+
+.spongebob {
+	width: 40px;
+	height: 50px;
+	background-image: url("http://2.bp.blogspot.com/-sp3iKNQ42W0/U3mnqy1shHI/AAAAAAAAfhk/tu4RoKGpZ1g/s1600/04.png");
+	background-repeat: no-repeat;
+  background-size: 40px 50px;
+	offset-path: path("M0,0a72.5,72.5 0 1,0 145,0a72.5,72.5 0 1,0 -145,0");
+	offset-rotate: 0deg;
+	transform: scale(1.5);
+	animation: load 2s cubic-bezier(0.5, 0.000, 0.070, 1.000) infinite;
+}
+
+@keyframes load {
+	from {
+		offset-distance: 0;
+	}
+	
+	to {
+		offset-distance: 100%;
+	}
 }

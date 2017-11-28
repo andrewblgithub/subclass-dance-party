@@ -1,15 +1,15 @@
-var makeBlinkyDancer = class makeBlinkyDancer extends makeDancer {
+var makeJumpyDancer = class makeJumpyDancer extends makeDancer {
 
   step () {
     super.step();
-    this.$node.addClass('krabby');
+    this.$node.addClass('patrick');
     this.$node.animate({
-      backgroundSize: '80%'
+      top: 100
     }, 600, function() {
       // Animation complete.
     });
     this.$node.animate({
-      backgroundSize: '40%'
+      top: 900
     }, 600, function() {
       // Animation complete.
     });
