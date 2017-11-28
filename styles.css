@@ -6,6 +6,7 @@ body{
   background-color:#444;
   background-image: url("https://vignette.wikia.nocookie.net/spongebob/images/4/47/Bikini-bottom.jpg/revision/latest?cb=20171020225427");
   font-size: 18px;
+  background-repeat: no-repeat;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
@@ -17,6 +18,10 @@ body, a:link, a:visited, a:active{
 .topbar{
   height:32px;
   background-color: #555;
+}
+.dancefloor{
+  height: 100%;
+  width: 100%;
 }
 .title{
   background-color: #777;
@@ -60,6 +65,14 @@ body, a:link, a:visited, a:active{
 	background-repeat: no-repeat;
   background-size: 40px 50px;
 	transform: scale(1.5);
+}
+
+.plankton {
+  background-image: url("https://vignette.wikia.nocookie.net/spongebob/images/8/85/Plankton_1.png/revision/latest?cb=20150227140830");
+	width: 60px;
+	height: 60px;
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
 }
 
 @keyframes load {
